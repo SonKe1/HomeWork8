@@ -23,7 +23,7 @@ public class Radio {
         if (currentRadioStation > 9) {
             return;
         }
-      this. currentRadioStation = currentRadioStation;
+        this.currentRadioStation = currentRadioStation;
 
     }
 
@@ -47,7 +47,7 @@ public class Radio {
         if (currentRadioVolume < 0) {
             return;
         }
-       this. currentRadioVolume = currentRadioVolume;
+        this.currentRadioVolume = currentRadioVolume;
     }
 
     public void setIncreaseRadioVolume() {
@@ -61,6 +61,5 @@ public class Radio {
             currentRadioVolume = currentRadioVolume - 1;
         } else currentRadioVolume = 0;
     }
-
 
 }
