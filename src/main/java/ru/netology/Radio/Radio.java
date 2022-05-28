@@ -24,20 +24,22 @@ public class Radio {
             return;
         }
         this.currentRadioStation = currentRadioStation;
-
     }
 
     public void setNextRadioStation() {
         if (currentRadioStation < 9) {
             currentRadioStation = currentRadioStation + 1;
-        } else currentRadioStation = 0;
-
+        } else {
+            currentRadioStation = 0;
+        }
     }
 
     public void setPrevRadioStation() {
         if (currentRadioStation > 0) {
             currentRadioStation = currentRadioStation - 1;
-        } else currentRadioStation = 9;
+        } else {
+            currentRadioStation = 9;
+        }
     }
 
     public void setCurrentRadioVolume(int currentRadioVolume) {
@@ -53,13 +55,17 @@ public class Radio {
     public void setIncreaseRadioVolume() {
         if (currentRadioVolume < 10) {
             currentRadioVolume = currentRadioVolume + 1;
-        } else currentRadioVolume = 10;
+        } else {
+            currentRadioVolume = 10;
+        }
     }
 
     public void setReductionRadioVolume() {
         if (currentRadioVolume > 0) {
             currentRadioVolume = currentRadioVolume - 1;
-        } else currentRadioVolume = 0;
+        } else {
+            currentRadioVolume = 0;
+        }
     }
 
 }
